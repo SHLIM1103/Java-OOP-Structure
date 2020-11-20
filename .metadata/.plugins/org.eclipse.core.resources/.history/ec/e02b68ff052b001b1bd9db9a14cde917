@@ -1,0 +1,12 @@
+package grade;
+
+public class GradeController {
+	private GradeService gradeService;
+
+	public GradeController() {
+		gradeService = new GradeServicImpl();
+		
+		
+		
+	}
+}

@@ -1,0 +1,14 @@
+package membership;
+
+public interface UserDAO {
+	public void join(UserDTO user);
+	public UserDTO login(UserDTO user);
+	public void edit(UserDTO user);
+	public void exitUser(UserDTO user);
+	public boolean existId(String id);
+	public UserDTO mypage(UserDTO user);
+	public UserDTO[] userList();
+	public UserDTO searchId(String id);
+	public UserDTO searchName(String name);
+	public int countUser();
+}

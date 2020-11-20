@@ -1,0 +1,27 @@
+package grade;
+
+public class GradeServicImpl implements GradeService {
+	private GradeDTO[] grade;
+	private int count ;
+	
+	public GradeServicImpl() {
+		grade = new GradeDTO[count];
+		count = 0;
+	}
+	
+	@Override
+	public int sum(GradeDTO grade) {
+		return grade.getKorean() + grade.getEnglish() + grade.getMath();
+	}
+
+	@Override
+	public float avg(int sum) {
+		return (float)sum / count;
+	}
+
+	@Override
+	public String gradeSort() {
+		
+		return null;
+	}
+}

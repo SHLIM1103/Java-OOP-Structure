@@ -1,0 +1,5 @@
+package membership;
+
+public interface UserServiceImpl implements UserService {
+	
+}

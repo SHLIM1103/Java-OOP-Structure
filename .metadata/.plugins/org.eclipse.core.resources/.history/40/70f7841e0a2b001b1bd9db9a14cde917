@@ -1,0 +1,22 @@
+package grade;
+
+public class GradeController {
+	private GradeService gradeService;
+
+	public GradeController() {
+		gradeService = new GradeServicImpl();
+	}
+
+	public int getSum(GradeDTO grade) {
+		return gradeService.sum(grade);
+	}
+
+	public float getAvg(int sum) {
+		return gradeService.avg(sum);
+	}
+
+	public String getGradeSort() {
+		return gradeService.gradeSort();
+	}
+
+}

@@ -1,0 +1,43 @@
+package user;
+
+public class UserController {
+	private UserService userService ;
+	
+	
+	public UserController() {
+		userService = new UserServiceImpl();
+	}
+	
+	public void post(UserDTO user) {
+		
+	}
+	public UserDTO postLogin(UserDTO user) {
+		UserDTO result = new UserDTO();
+		return result;
+	}
+	public void putPassword(UserDTO user) {
+		
+	}
+	public void delete(UserDTO user) {
+		
+	}
+	public boolean getExistId(UserDTO user) {
+		boolean result = false;
+		return result;
+	}
+	public UserDTO getUser(UserDTO user) {
+		
+	}
+	public UserDTO[] getUserList(UserDTO user) {
+		
+	}
+	public UserDTO getById(UserDTO user) {
+		
+	}
+	public UserDTO[] getByName(UserDTO user) {
+		
+	}
+	public int getCount(UserDTO user) {
+		
+	}
+}

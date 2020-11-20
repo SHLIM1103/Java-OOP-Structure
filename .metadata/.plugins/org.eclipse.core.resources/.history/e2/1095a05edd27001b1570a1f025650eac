@@ -1,0 +1,29 @@
+package hellopackage;
+
+import java.util.Scanner;
+
+import hellopackage.Hiperson;
+import hellopackage.JavaBan;
+import hellopackage.Main;
+
+class HelloWorld {
+	public static void main(String[] args) {
+		Hiperson person = new Hiperson();
+		JavaBan ban = new JavaBan();
+		Main main = new Main();
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("What name?");
+		String name = scanner.nextLine();
+		person.setName(name);
+		
+		System.out.println("What age?");
+		int age = scanner.nextInt();
+		person.setAge(age);
+		
+		System.out.println("Name is "+ person.getName() + ", age is " + person.getAge());
+		
+		scanner.close();
+		
+	} // 중괄호 안이 "필드"! 필드 안에 다른 클래스나 패키지는 들어올 수 없다. "Syntax"
+}

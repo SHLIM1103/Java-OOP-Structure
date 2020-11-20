@@ -1,0 +1,9 @@
+package user;
+
+public class UserServiceImpl implements UserService {
+
+	@Override
+	public String printName(UserDTO user) {
+		return null;
+	}
+}

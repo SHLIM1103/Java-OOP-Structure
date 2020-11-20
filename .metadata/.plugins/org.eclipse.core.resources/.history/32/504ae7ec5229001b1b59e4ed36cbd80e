@@ -1,0 +1,29 @@
+package Calculator;
+
+public abstract class CalculatorServiceImpl implements calculatorService2 {
+
+	@Override
+	public int add(CalculatorDTO cal) {
+		return cal.getNumber1() + cal.getNumber2();
+	}
+
+	@Override
+	public int minus(CalculatorDTO cal) {
+		return cal.getNumber1() - cal.getNumber2();
+	}
+
+	@Override
+	public int multi(CalculatorDTO cal) {
+		return cal.getNumber1() * cal.getNumber2();
+	}
+
+	@Override
+	public int divid(CalculatorDTO cal) {
+		return cal.getNumber1() / cal.getNumber2();
+	}
+
+	@Override
+	public int modul(CalculatorDTO cal) {
+		return cal.getNumber1() % cal.getNumber2();	
+	}
+}

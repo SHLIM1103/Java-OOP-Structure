@@ -1,0 +1,16 @@
+package view;
+
+import java.util.Scanner;
+
+import grade.GradeDTO;
+import grade.GradeService;
+
+public class GradeMain {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+		GradeDTO grade = new GradeDTO();
+		
+		
+	}
+}

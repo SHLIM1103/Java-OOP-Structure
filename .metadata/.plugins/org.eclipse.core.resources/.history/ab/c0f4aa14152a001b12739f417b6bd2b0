@@ -1,0 +1,22 @@
+package viewer;
+
+public class LoopTest {
+	public static void main(String[] args) {
+		// 1 + 2 = 3
+		for (int i = 0; i < 10; i++) {
+			System.out.printf("%d + ", i);
+			
+			int sum += sum ;
+			if(i == 9) {
+				System.out.print(i + "=" + sum);
+			}
+		}
+		
+		// 1 + 2 = 3
+		int i = 0;
+		while (i < 10) {
+			i++;
+			
+		}
+	}
+}

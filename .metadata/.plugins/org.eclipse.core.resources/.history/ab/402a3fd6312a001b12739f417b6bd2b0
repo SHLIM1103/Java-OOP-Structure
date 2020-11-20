@@ -1,0 +1,14 @@
+package user;
+
+public class UserController {
+	public void post(UserDTO user) {}
+	public UserDTO postLogin(UserDTO user) {}
+	public void putPassword(UserDTO user) {}
+	public void delete(UserDTO user) {}
+	public boolean getExistId(UserDTO user) {}
+	public UserDTO getUser(UserDTO user) {}
+	public UserDTO[] getUserList(UserDTO user) {}
+	public UserDTO getById(UserDTO user) {}
+	public UserDTO[] getByName(UserDTO user) {}
+	public int getCount(UserDTO user) {}
+}

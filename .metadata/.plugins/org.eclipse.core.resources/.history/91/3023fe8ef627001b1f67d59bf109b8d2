@@ -1,0 +1,33 @@
+package day01;
+
+import day01.Operator;
+
+import java.util.Scanner;
+
+import day01.Naming;
+
+class Main {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		Operator operator = new Operator();
+		Naming naming = new Naming();
+		
+		System.out.print("숫자 1: ");
+		int myNumber1 = scanner.nextInt();
+		operator.setMyNumber1(myNumber1);
+		
+		System.out.print("숫자 2: ");
+		int myNumber2 = scanner.nextInt();
+		operator.setMyNumber2(myNumber2);
+		
+		System.out.println("myNumber1 + myNumber2 = " + (operator.getMyNumber1() + operator.getMyNumber2()));
+		System.out.println("myNumber1 - myNumber2 = " + (operator.getMyNumber1() - operator.getMyNumber2()));
+		System.out.println("myNumber1 * myNumber2 = " + (operator.getMyNumber1() * operator.getMyNumber2()));
+		System.out.println("myNumber1 / myNumber2 = " + (operator.getMyNumber1() / operator.getMyNumber2()));
+		System.out.println("myNumber1 % myNumber2 = " + (operator.getMyNumber1() % operator.getMyNumber2()));
+		
+		
+		
+	}
+}

@@ -1,0 +1,14 @@
+package hellopackage;
+
+import hellopackage.Hiperson;
+import hellopackage.JavaBan;
+import hellopackage.Main;
+
+
+public class HelloWorld {
+	public static void main(String[] args) {
+		Hiperson person = new Hiperson();
+		JavaBan ban = new JavaBan();
+		Main main = new Main();
+	}
+}

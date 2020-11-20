@@ -1,0 +1,12 @@
+package grade;
+
+public class GrageController {
+	public int sum(GradeDTO grade) {
+	}
+
+	public float avg(int sum) {
+	}
+
+	public String gradeSort() {
+	}
+}

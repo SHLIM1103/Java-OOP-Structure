@@ -1,0 +1,22 @@
+package day02;
+
+import java.util.Scanner;
+
+class Main {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		GradeBook grade = new GradeBook();
+		
+		System.out.print("학번: ");
+		int id = scanner.nextInt();
+		grade.setId(id);
+		
+		
+		System.out.print("이름: ");
+		scanner.nextLine();
+		String name = scanner.nextLine();
+		
+		
+		scanner.close();
+	}
+}

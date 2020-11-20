@@ -1,0 +1,55 @@
+package user;
+
+public class UserServiceImpl implements UserService {
+
+	@Override
+	public String join(UserDTO user) {
+		return null;
+	}
+
+	@Override
+	public UserDTO postLogin(UserDTO user) {
+		return null;
+	}
+
+	@Override
+	public String editPassword(UserDTO user) {
+		return null;
+	}
+
+	@Override
+	public String withdrawal(UserDTO user) {
+		return null;
+	}
+
+	@Override
+	public String existId(UserDTO user) {
+		return null;
+	}
+
+	@Override
+	public String mypage(UserDTO user) {
+		return null;
+	}
+
+	@Override
+	public String userList(UserDTO user) {
+		return null;
+	}
+
+	@Override
+	public String searchId(UserDTO user) {
+		return null;
+	}
+
+	@Override
+	public String searchName(UserDTO user) {
+		return null;
+	}
+
+	@Override
+	public int allUser(UserDTO user) {
+		return 0;
+	}
+
+}

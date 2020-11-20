@@ -1,0 +1,22 @@
+package hellopackage;
+
+class Hiperson {
+	String name;
+	int age ;
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void getAge() {
+		return age;
+	}
+	
+	public int setAge(int age) {
+		this.age = age;
+	}
+}

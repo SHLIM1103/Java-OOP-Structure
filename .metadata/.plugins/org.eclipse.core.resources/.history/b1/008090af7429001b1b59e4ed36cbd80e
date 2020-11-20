@@ -1,0 +1,11 @@
+package bmi;
+
+public class BmiController {
+	public double execute(BmiDTO param) {
+		
+		BmiService service = new BmiServiceImpl();
+		double res = param.getWeight()/param.getHeight()/param.getHeight();
+		
+		return res;
+	}
+}

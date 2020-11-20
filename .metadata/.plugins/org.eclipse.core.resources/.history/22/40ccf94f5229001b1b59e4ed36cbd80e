@@ -1,0 +1,9 @@
+package Calculator;
+
+public interface calculatorService {
+	public int add(CalculatorDTO cal);
+	public int minus(CalculatorDTO cal);
+	public int multi(CalculatorDTO cal);
+	public int divide(CalculatorDTO cal);
+	public int module(CalculatorDTO cal);
+}

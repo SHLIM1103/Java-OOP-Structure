@@ -1,0 +1,99 @@
+package membership;
+
+public class UserServiceImpl implements UserService {
+
+	private UserDTO[] users;
+	private int count;
+
+	public UserServiceImpl() {
+		users = new UserDTO[3];
+		count = 0;
+	}
+
+	@Override
+	public void join(UserDTO user) {
+		users[count] = user;
+		count++;
+	}
+
+	@Override
+	public UserDTO login(UserDTO user) {
+		UserDTO result = null;
+		for (int i = 0; i < count; i++) {
+			if (user.getUserId().equals(users[i].getUserId()) && 
+					user.getPassword().equals(users[i].getPassword())) {
+				result = users[i];
+				break;
+			}
+		}
+		return result;
+	}
+
+	@Override
+	public void edit(UserDTO user) {
+		for (int i = 0; i < count; i++) {
+			if (user.getUserId().equals(users[i].getUserId())) {
+				users[i].setPassword(user.getPassword());
+				break;
+			}
+		}
+	}
+
+	@Override
+	public void exitUser(UserDTO user) {
+		for (int i = 0; i < count; i++) {
+			if (user.getUserId().equals(users[i].getUserId()) && 
+					user.getPassword().equals(users[i].getPassword())) {
+				users[i] = users[count - 1]; // 맨 뒤 데이터를 카피해서 삭제되는 i인덱스로 옮긴다.
+				users[count - 1] = null; // 기존 맨 뒤에 있는 데이터를 삭제한다.
+				count--; // 맨 뒤 데이터를 삭제했으므로 count를 하나 빼준다.
+				break; // for loop 종료
+			}
+		}
+	}
+
+	@Override
+	public boolean existId(String id) {
+		for (int i = 0; i < count; i++) {
+			if (id.equals(users[i].getUserId())) {
+				return false;
+			}
+			break;
+		}
+		return true;
+	}
+
+	@Override
+	public UserDTO mypage(UserDTO user) {
+		UserDTO result = null;
+		for (int i = 0; i < count; i++) {
+			if (user.getUserId().equals(users[i].getUserId()) && 
+					user.getPassword().equals(users[i].getPassword())) {
+				return result = users[i];
+			}
+			break;
+		}
+		return result;
+	}
+
+	@Override
+	public UserDTO[] userList() {
+		return null;
+	}
+
+	@Override
+	public UserDTO searchId(String id) {
+		return null;
+	}
+
+	@Override
+	public UserDTO searchName(String name) {
+		return null;
+	}
+
+	@Override
+	public int countUser() {
+		return count;
+	}
+
+}

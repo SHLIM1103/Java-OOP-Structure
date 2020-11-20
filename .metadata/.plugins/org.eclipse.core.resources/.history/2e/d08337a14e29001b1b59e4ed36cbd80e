@@ -1,0 +1,23 @@
+package day04;
+
+public class CalculatorService {
+	int add(CalculatorDTO cal) {
+		return cal.getNumber1() + cal.getNumber2();
+	}
+	
+	int minus(CalculatorDTO cal) {
+		return cal.getNumber1() - cal.getNumber2();
+	}
+	
+	int multi(CalculatorDTO cal) {
+		return cal.getNumber1() * cal.getNumber2();
+	}
+	
+	int divide(CalculatorDTO cal) {
+		return cal.getNumber1() / cal.getNumber2();
+	}
+	
+	int module(CalculatorDTO cal) {
+		return cal.getNumber1() % cal.getNumber2();
+	}
+}

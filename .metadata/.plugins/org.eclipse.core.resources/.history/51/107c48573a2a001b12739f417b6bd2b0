@@ -1,0 +1,15 @@
+package membership;
+//"Menu: (1)회원가입 (2)로그인 (3)비밀번호 수정 (4)회원탈퇴 (5)아이디 중복체크 (6)마이페이지 (7)회원목록 (8)아이디검색 (9)이름검색 (10)전체 회원수 (0)종료"
+
+public interface UserService {
+	public void postJoin(UserDTO user);
+	public UserDTO postLSogin(UserDTO user);
+	public void putEditPassword(UserDTO user);
+	public void delete(UserDTO user);
+	public boolean getExistId(UserDTO user);
+	public UserDTO getMypage(UserDTO user);
+	public UserDTO[] getUserList(UserDTO user);
+	public UserDTO getSearchId(UserDTO user);
+	public UserDTO[] getSearchName(UserDTO user);
+	public int getUserCount(UserDTO user);
+}

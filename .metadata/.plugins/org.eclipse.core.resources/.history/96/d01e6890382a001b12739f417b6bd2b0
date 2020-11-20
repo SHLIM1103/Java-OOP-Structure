@@ -1,0 +1,65 @@
+package membership;
+
+public class UserServiceImpl implements UserService {
+
+	@Override
+	public void postJoin(UserDTO user) {
+		
+	}
+
+	@Override
+	public UserDTO postLSogin(UserDTO user) {
+		return null;
+	}
+
+	@Override
+	public void putEditPassword(UserDTO user) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(UserDTO user) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean getExistId(UserDTO user) {
+		boolean result = false;
+		return result;
+	}
+
+	@Override
+	public UserDTO getMypage(UserDTO user) {
+		UserDTO userDto = new UserDTO();
+		
+		return result;
+	}
+
+	@Override
+	public UserDTO[] getUserList(UserDTO user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserDTO getSearchId(UserDTO user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserDTO[] getSearchName(UserDTO user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int getUserCount(UserDTO user) {
+		UserDTO userDto = new UserDTO();
+		
+		return result ;
+	}
+
+}

@@ -1,0 +1,65 @@
+package membership;
+
+public class UserServiceImpl implements UserService {
+
+	private UserDTO[] users;
+
+	public UserServiceImpl() {
+		users = new UserDTO[3];
+	}
+
+	@Override
+	public void join(UserDTO user) {
+		users[0] = user;
+	}
+
+	@Override
+	public UserDTO login(UserDTO user) {
+		UserDTO result = null;
+		if(user.getUserId().equals(users[0].getUserId()) && user.getPassword().equals(users[0].getPassword())) {
+			users[0];
+		}else {}
+		return users[0];
+	}
+
+	@Override
+	public void edit(UserDTO user) {
+
+	}
+
+	@Override
+	public void exitUser(UserDTO user) {
+
+	}
+
+	@Override
+	public boolean existId(String id) {
+		return false;
+	}
+
+	@Override
+	public UserDTO mypage(UserDTO user) {
+		return null;
+	}
+
+	@Override
+	public UserDTO[] userList() {
+		return null;
+	}
+
+	@Override
+	public UserDTO searchId(String id) {
+		return null;
+	}
+
+	@Override
+	public UserDTO searchName(String name) {
+		return null;
+	}
+
+	@Override
+	public int countUser() {
+		return 0;
+	}
+
+}

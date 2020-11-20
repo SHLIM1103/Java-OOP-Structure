@@ -1,0 +1,22 @@
+package day04;
+
+public class CalculationService {
+	int execute(CalculationDTO dto) {
+		int n1 = dto.getNumber1();
+		int n2 = dto.getNumber2();		
+		String op = dto.getOpcode();
+		int res = 0;
+
+		if(op.equals("+")) {
+			res = (n1 + n2);
+		}else if(op.equals("-")) {
+			res = (n1 - n2);
+		}else if(op.equals("*")) {
+			res = (n1 * n2);
+		}else if(op.equals("/")) {
+			res = (n1 / n2);
+		}else if(op.equals("%")) {
+			res = (n1 % n2);
+		}
+	}
+}

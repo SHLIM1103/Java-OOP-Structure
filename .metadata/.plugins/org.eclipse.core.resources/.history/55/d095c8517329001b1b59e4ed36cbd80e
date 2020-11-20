@@ -1,0 +1,51 @@
+package viewer;
+
+import java.util.Scanner;
+
+import calculator.CalculatorController;
+import calculator.CalculatorDTO;
+import calculator.CalculatorService;
+import calculator.CalculatorServiceImpl;
+import bmi.BmiController;
+import bmi.BmiDTO;
+import bmi.BmiService;
+import bmi.BmiServiceImpl;
+import user.UserDTO;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		CalculatorDTO cal = new CalculatorDTO();
+		CalculatorController controller = new CalculatorController();
+		CalculatorService service = new CalculatorServiceImpl();
+
+		BmiDTO bmi = new BmiDTO();
+		BmiController bcontroller = new BmiController();
+		BmiService bservice = new BmiServiceImpl();
+		
+		UserDTO user = new UserDTO();
+		
+
+		System.out.println("계산기 실행");
+
+		System.out.print("number1: ");
+		cal.setNumber1(scanner.nextInt());
+		System.out.print("연산자 입력(+,-,*,/,%): ");
+		cal.setOpcode(scanner.next());
+		System.out.print("number2: ");
+		cal.setNumber2(scanner.nextInt());
+		System.out.println("답: " + controller.execute(cal));
+
+		System.out.println("BMI 계산기 실행");
+
+		System.out.print("이름: ");
+		
+		System.out.print("키(m): ");
+		bmi.setHeight(scanner.nextDouble());
+		System.out.print("몸무게(kg): ");
+		bmi.setWeight(scanner.nextDouble());
+		System.out.printf("BMI는 %.2f 입니다.", bcontroller.execute(bmi));
+		
+		scanner.close();
+	}
+}

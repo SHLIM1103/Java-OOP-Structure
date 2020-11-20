@@ -1,0 +1,11 @@
+package hellopackage;
+import hellopackage.HelloWorld;
+import hellopackage.Hiperson;
+
+public class Main {
+	public static void main(String[] args) {
+		Hiperson hi = new Hiperson();
+		HelloWorld world = new HelloWorld();
+		
+	}
+}

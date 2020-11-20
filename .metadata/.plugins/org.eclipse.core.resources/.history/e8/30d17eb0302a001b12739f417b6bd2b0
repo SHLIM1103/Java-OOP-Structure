@@ -1,0 +1,14 @@
+package user;
+
+public class UserController {
+	public String join(UserDTO user) {}
+	public String login(UserDTO user) {}
+	public String editPassword(UserDTO user) {}
+	public String withdrawal(UserDTO user) {}
+	public String existId(UserDTO user) {}
+	public String mypage(UserDTO user) {}
+	public String userList(UserDTO user) {}
+	public String searchId(UserDTO user) {}
+	public String searchName(UserDTO user) {}
+	public int allUser(UserDTO user) {}
+}

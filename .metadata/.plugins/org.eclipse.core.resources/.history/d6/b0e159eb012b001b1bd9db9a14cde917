@@ -1,0 +1,49 @@
+package grade;
+
+public class GradeDTO {
+	String name;
+	int korean, english, math, sum;
+	private double ave;
+
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getKorean() {
+		return korean;
+	}
+	public void setKorean(int korean) {
+		this.korean = korean;
+	}
+	public int getEnglish() {
+		return english;
+	}
+	public void setEnglish(int english) {
+		this.english = english;
+	}
+	public int getMath() {
+		return math;
+	}
+	public void setMath(int math) {
+		this.math = math;
+	}
+	public int getSum() {
+		return sum;
+	}
+	public void setSum(int sum) {
+		this.sum = sum;
+	}
+	public double getAve() {
+		return ave;
+	}
+	public void setAve(double ave) {
+		this.ave = ave;
+	}
+
+	@Override
+	public String toString() {
+		return "GradeDTO [name=" + name + ", korean=" + korean + ", english=" + english + ", math=" + math + "]";
+	}
+}

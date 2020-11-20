@@ -1,0 +1,22 @@
+package hellopackage;
+
+class JavaBan {
+	String hi;
+	String bye;
+	
+	void setHi(String hi) {
+		this.hi = hi;
+	}
+	
+	String getHi() {
+		return hi;
+	}
+	
+	void setBye(String bye) {
+		this.bye = bye;
+	}
+	
+	String getBye() {
+		return bye;
+	}
+}

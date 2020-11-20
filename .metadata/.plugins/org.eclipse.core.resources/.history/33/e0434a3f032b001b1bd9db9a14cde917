@@ -1,0 +1,25 @@
+package grade;
+
+public class GradeServicImpl implements GradeService {
+
+	@Override
+	public int sum(GradeDTO grade) {
+		int result = grade.getKorean() + grade.getEnglish() + grade.getMath();
+		return result;
+	}
+
+	@Override
+	public float avg(int sum) {
+		int result = sum / 3 ; 
+		return result;
+	}
+
+	@Override
+	public String GradeSort() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
+
+

@@ -1,0 +1,7 @@
+package lotto;
+
+public class LottoDTO {
+	private int countLimit, lottoCount;
+	private int[] lotto;
+	private int[][] lottos;
+}

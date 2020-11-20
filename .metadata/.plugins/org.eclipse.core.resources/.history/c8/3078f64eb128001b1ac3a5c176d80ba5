@@ -1,0 +1,8 @@
+package day04;
+
+public class CalculationController {
+	int control(CalculationDTO dto) {
+		CalculationService service = new CalculationService();
+		return service.execute(dto);
+	}
+}

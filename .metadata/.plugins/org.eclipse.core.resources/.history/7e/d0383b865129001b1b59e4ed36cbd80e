@@ -1,0 +1,7 @@
+
+public interface CalculatorService {
+	public int add();
+	public int minus();
+	public int multi();
+	public int divide();
+}

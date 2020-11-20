@@ -1,0 +1,14 @@
+package view;
+
+import membership.UserDTO;
+
+import java.util.Scanner;
+
+import membership.UserController;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+	}
+}

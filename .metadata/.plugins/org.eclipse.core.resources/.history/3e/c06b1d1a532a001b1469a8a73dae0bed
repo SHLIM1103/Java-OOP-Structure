@@ -1,0 +1,40 @@
+package membership;
+
+public class UserController {
+	private UserService userService;
+	
+	public UserController() {
+		userService = new UserServiceImpl();
+	}
+	
+	public void join(UserDTO user) {
+	}
+
+	public UserDTO login(UserDTO user) {
+	}
+
+	public void editPassword(UserDTO user) {
+	}
+
+	public void exitUser(UserDTO user) {
+	}
+
+	public boolean existId(String id) {
+	}
+
+	public UserDTO mypage(UserDTO user) {
+	}
+
+	public UserDTO[] userList(UserDTO user) {
+	}
+
+	public UserDTO searchId(String id) {
+	}
+
+	public UserDTO searchName(String name) {
+	}
+
+	public int countUser() {
+	}
+
+}
